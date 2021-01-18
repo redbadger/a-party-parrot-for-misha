@@ -6,7 +6,7 @@ She mentioned, how Misha love party parrot
 
 ![party parrot](https://cultofthepartyparrot.com/parrots/hd/parrot.gif)
 
-So here is playground for him
+So [here is playground](https://redbadger.github.io/when-sally-meet-misha/) for him
 
 ## Technologies
 
