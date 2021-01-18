@@ -1,8 +1,12 @@
-const elements = document.querySelectorAll('animate');
+const elements = Array.from(document.querySelectorAll('animate'));
+const rangeInput = document.querySelector('input[type="range"]');
 
-function updateDuration(val) {
-  var newVal = Math.abs(val) + 'ms';
-  Array.prototype.forEach.call(elements, function (el, i) {
-    el.setAttribute('dur', newVal);
-  });
-}
+const updateDuration = (event) => {
+  const {
+    currentTarget: { value },
+  } = event;
+  const newValue = `${Math.abs(value)}ms`;
+  elements.forEach((element) => element.setAttribute('dur', newValue));
+};
+
+rangeInput.addEventListener('change', updateDuration);
